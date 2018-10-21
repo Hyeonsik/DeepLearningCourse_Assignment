@@ -1,0 +1,7 @@
+optimizer : AdagradOptimizer / batch_size : 1000 / loop : 100 / test_acc : 0.9236000180244446
+optimizer : AdagradOptimizer / batch_size : 1000 / loop : 100 / train_acc : 0.9253454804420471 / test_acc : 0.9246000051498413
+optimizer : GradientDescentOptimizer / batch_size : 1000 / loop : 100 / train_acc : 0.9179999828338623 / test_acc : 0.9194999933242798
+optimizer : GradientDescentOptimizer / batch_size : 1000 / loop : 100 / train_acc : 91.929% / test_acc : 92.010%
+optimizer : GradientDescentOptimizer / learning_rate : 0.5 / batch_size : 1000 / loop : 100 / train_acc : 90.645% / test_acc : 89.840%
+optimizer : GradientDescentOptimizer / learning_rate : 0.5 / batch_size : 1000 / loop : 100 / train_acc : 89.878% / test_acc : 89.130%
+optimizer : GradientDescentOptimizer / learning_rate : 0.1 / batch_size : 1000 / loop : 100 / train_acc : 92.411% / test_acc : 91.400%

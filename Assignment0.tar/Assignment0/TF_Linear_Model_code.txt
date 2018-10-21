@@ -1,0 +1,73 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import numpy as np
+
+import sys
+sys.path.append('./utils')
+
+from mnist import MNIST
+data = MNIST(data_dir="data/MNIST/")
+
+num_classes = data.num_classes # 10
+
+x = tf.placeholder(tf.float32, [None, img_size_flat])
+y_true = tf.placeholder(tf.float32, [None, num_classes])
+y_true_cls = tf.placeholder(tf.int64, [None])
+
+weights = tf.Variable(tf.zeros([img_size_flat, num_classes]))
+biases = tf.Variable(tf.zeros([num_classes]))
+
+logits = tf.matmul(x, weights) + biases
+y_pred = tf.nn.softmax(logits)
+y_pred_cls = tf.argmax(y_pred, axis=1)
+
+cross_entropy = tf.nn.softmax_cross_entropy_with_logits_v2(logits=logits,
+                                                           labels=y_true)
+cost = tf.reduce_mean(cross_entropy)
+learning_rate = 0.1
+optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
+#GradientDescentOptimizer AdagradOptimizer AdamOptimizer 
+#More information in http://ruder.io/optimizing-gradient-descent/index.html#adam
+
+
+correct_prediction = tf.equal(y_pred_cls, y_true_cls)
+
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+
+session = tf.Session()
+session.run(tf.global_variables_initializer())
+batch_size = 1000   #better than 100, 10 
+
+feed_dict_train = {x: data.x_train,
+                  y_true: data.y_train,
+                  y_true_cls: data.y_train_cls}
+
+feed_dict_test = {x: data.x_test,
+                  y_true: data.y_test,
+                  y_true_cls: data.y_test_cls}
+
+loop = 100
+
+for i in range(loop) :
+    optimize(num_iterations=10)
+    acc = session.run(accuracy, feed_dict = feed_dict_train)
+    #plt.ion()
+    plt.scatter(10*(i+1), acc)
+    x_lab = 'train data'
+    y_lab = 'accuracy'
+    plt.xlabel(x_lab)
+    plt.ylabel(y_lab)
+    
+    plt.draw();
+    #plt.pause(0.5)
+    #print("iteration {} : Accuracy : {:.2%} / ".format(10*i,acc))
+    
+acc_test = session.run(accuracy, feed_dict_test)    
+print("iteration {} : Accuracy : {:.2%} / ".format(loop * batch_size, acc))
+
+f = open("MNIST_linear_model.txt", 'a')
+f.write("optimizer : {} / learning_rate : {} / batch_size : {} / loop : {} / train_acc : {:.3%} / test_acc : {:.3%}\n".format('GradientDescentOptimizer', learning_rate, batch_size, loop, acc, acc_test))
+f.close()
+
+session.close()    
