@@ -28,10 +28,14 @@ Reference : [Image preprocessing in Deep Learning](https://stackoverflow.com/que
 Early stopping is widely used to stop learning while monitoring the performance curve. Today in Deep learning Course, the professor said early stopping is unnoticeable which means there is no change in learning dynamics. If I had done early stopping with basic cost, whether how I add terms in cost function I will do early stopping anyway.<br>
 I was curious what should be the index to do early stopping. When dev-set cost is minimum? Or when dev-set accuracy is maximum? So I searched through internet, and I found one answer. Which says it is case-by-case. The ultimate goal of the model will determine what to monitor. 
 <br>
-Reference : [Early stopping on validation loss or on accuracy?](https://datascience.stackexchange.com/questions/37186/early-stopping-on-validation-loss-or-on-accuracy) <br><br>
+Reference : [Early stopping on validation loss or on accuracy?](https://datascience.stackexchange.com/questions/37186/early-stopping-on-validation-loss-or-on-accuracy) <br>
 
 Of course, early stopping is not a really good option due to breaking orthogornalization of parameters(it breaks down more than one parameter simulataneously). But for homework, I can't just wait and monitor the curve even if validation cost is going on! So I think it would be useful to save time when we use early stopping well.
+<br>
+<br>
 
+3. Batch size
+[Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
 
 
 
