@@ -2,8 +2,7 @@
 
 ### Date : 2018-11-06
 
-1. Data Preprocessing <br>
-
+__1. Data Preprocessing__ <br>
 Basically it is better to make data zero-centered with standard deviation 1 (normalized). <br>
 I quoted explantion from Standford CS231n 2016 lectures :
 > Normalization refers to normalizing the data dimensions so that they are of approximately the same scale. For Image data There are two common ways of achieving this normalization. One is to divide each dimension by its standard deviation, once it has been zero-centered:
@@ -23,8 +22,7 @@ Reference : [Image preprocessing in Deep Learning](https://stackoverflow.com/que
 <br>
 <br>
 
-2. Early Stopping
-
+__2. Early Stopping__ <br>
 Early stopping is widely used to stop learning while monitoring the performance curve. Today in Deep learning Course, the professor said early stopping is unnoticeable which means there is no change in learning dynamics. If I had done early stopping with basic cost, whether how I add terms in cost function I will do early stopping anyway.<br>
 I was curious what should be the index to do early stopping. When dev-set cost is minimum? Or when dev-set accuracy is maximum? So I searched through internet, and I found one answer. Which says it is case-by-case. The ultimate goal of the model will determine what to monitor. 
 <br>
@@ -34,7 +32,7 @@ Of course, early stopping is not a really good option due to breaking orthogorna
 <br>
 <br>
 
-3. Batch size
+**3. Batch size** <br>
 [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
 
 
