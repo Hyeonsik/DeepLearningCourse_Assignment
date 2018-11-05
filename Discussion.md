@@ -35,5 +35,5 @@ Of course, early stopping is not a really good option due to breaking orthogorna
 **3. Batch size** <br>
 [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
 
-
-    - Other reference : [37 Reasons why your neural netowork is not working](https://blog.slavv.com/37-reasons-why-your-neural-network-is-not-working-4020854bd607]
+<br>
+  - Other reference : [37 Reasons why your neural netowork is not working](https://blog.slavv.com/37-reasons-why-your-neural-network-is-not-working-4020854bd607]
