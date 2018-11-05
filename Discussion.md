@@ -19,7 +19,7 @@ Here is how I applied to my homework. (Artificial Intelligence System, 2018 Fall
 
 Because image data is already boundaried between 0 to 1(in this case), I only moved data to make it zero-centered. Normalizing data would take some computations and time, I just only did zero-centered. And it works better than before on fitting 3-layers neural networks. I think it's because input data has lots of noises with few numbers of data.
 
-Reference : [Image preprocessing in Deep Learning]("https://stackoverflow.com/questions/41428868/image-preprocessing-in-deep-learning")
+Reference : [Image preprocessing in Deep Learning](https://stackoverflow.com/questions/41428868/image-preprocessing-in-deep-learning)
 <br>
 <br>
 
@@ -27,7 +27,7 @@ Reference : [Image preprocessing in Deep Learning]("https://stackoverflow.com/qu
 
 Early stopping is widely used to stop learning while monitoring the performance curve. Today in Deep learning Course, the professor said early stopping is unnoticeable which means there is no change in learning dynamics. If I had done early stopping with basic cost, whether how I add terms in cost function I will do early stopping anyway.<br>
 I was curious what should be the index to do early stopping. When dev-set cost is minimum? Or when dev-set accuracy is maximum? So I searched through internet, and I found one answer. Which says it is case-by-case. The ultimate goal of the model will determine what to monitor. 
-Reference : [Early stopping on validation loss or on accuracy?]("https://datascience.stackexchange.com/questions/37186/early-stopping-on-validation-loss-or-on-accuracy")
+Reference : [Early stopping on validation loss or on accuracy?](https://datascience.stackexchange.com/questions/37186/early-stopping-on-validation-loss-or-on-accuracy)
 Of course, early stopping is not a really good option due to breaking orthogornalization of parameters(it breaks down more than one parameter simulataneously). But for homework, I can't just wait and monitor the curve even if validation cost is going on! So I think it would be useful to save time when we use early stopping well.
 
 
