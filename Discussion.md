@@ -11,6 +11,7 @@ I quoted explantion from Standford CS231n 2016 lectures :
 <br>
 
 Here is how I applied to my homework. (Artificial Intelligence System, 2018 Fall, Homework4)
+
     x = tf.placeholder("float", [None, n_input])
     y = tf.placeholder("float", [None, n_classes])
     x = (x - tf.reduce_mean(x, axis = 0, keepdims = True))
@@ -19,6 +20,7 @@ Here is how I applied to my homework. (Artificial Intelligence System, 2018 Fall
 Because image data is already boundaried between 0 to 1(in this case), I only moved data to make it zero-centered. Normalizing data would take some computations and time, I just only did zero-centered. And it works better than before on fitting 3-layers neural networks. I think it's because input data has lots of noises with few numbers of data.
 
 Reference : [Image preprocessing in Deep Learning]("https://stackoverflow.com/questions/41428868/image-preprocessing-in-deep-learning")
+<br>
 <br>
 
 2. 
