@@ -30,7 +30,16 @@ Reference : [Early stopping on validation loss or on accuracy?](https://datascie
 
 Of course, early stopping is not a really good option due to breaking orthogornalization of parameters(it breaks down more than one parameter simulataneously). But for homework, I can't just wait and monitor the curve even if validation cost is going on! So I think it would be useful to save time when we use early stopping well.
 <br>
+
+**18/12/01** <br>
+[Capturing keyboardinterrupt](https://stackoverflow.com/questions/4205317/capture-keyboardinterrupt-in-python-without-try-except)
+
+
+
 <br>
+
+
+
 
 **3. Batch size** <br>
 [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
