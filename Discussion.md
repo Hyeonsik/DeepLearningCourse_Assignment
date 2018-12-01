@@ -2,7 +2,7 @@
 
 ### Date : 2018-11-06
 
-__1. Data Preprocessing__ <br>
+#### __1. Data Preprocessing__ <br>
 Basically it is better to make data zero-centered with standard deviation 1 (normalized). <br>
 I quoted explantion from Standford CS231n 2016 lectures :
 > Normalization refers to normalizing the data dimensions so that they are of approximately the same scale. For Image data There are two common ways of achieving this normalization. One is to divide each dimension by its standard deviation, once it has been zero-centered:
@@ -35,11 +35,7 @@ Of course, early stopping is not a really good option due to breaking orthogorna
 [Capturing keyboardinterrupt](https://stackoverflow.com/questions/4205317/capture-keyboardinterrupt-in-python-without-try-except)
 [Early stop using Keras](https://chrisalbon.com/deep_learning/keras/neural_network_early_stopping/)
 
-
 <br>
-
-
-
 
 **3. Batch size** <br>
 [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
@@ -54,4 +50,14 @@ There were some points with very large cost peaking out.
   
   
  **5. Pyplot ** <br>
-[two_scales graph(twin)](https://matplotlib.org/examples/api/two_scales.html)
+[two_scales graph(twin)](https://matplotlib.org/examples/api/two_scales.html) <br>
+
+
+**6. Save & Restore in Tensorflow ** <br>
+
+
+- References<br>
+(https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/)
+[TensorFlow 모델을 저장하고 불러오기](http://goodtogreate.tistory.com/entry/Saving-and-Restoring) <br>
+[텐서플로우(TensorFlow)에서 Tf.Train.Saver API를 이용해서 모델과 파라미터를 저장(Save)하고 불러오기(Restore)](http://solarisailab.com/archives/2524) <br>
+[Save and Restore](https://www.tensorflow.org/guide/saved_model) <br>
