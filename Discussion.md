@@ -57,7 +57,8 @@ There were some points with very large cost peaking out.
 
 
 - References<br>
-(https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/)
+[Link1](https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/) <br>
 [TensorFlow 모델을 저장하고 불러오기](http://goodtogreate.tistory.com/entry/Saving-and-Restoring) <br>
 [텐서플로우(TensorFlow)에서 Tf.Train.Saver API를 이용해서 모델과 파라미터를 저장(Save)하고 불러오기(Restore)](http://solarisailab.com/archives/2524) <br>
 [Save and Restore](https://www.tensorflow.org/guide/saved_model) <br>
+(http://jaynewho.com/post/8) <br>
