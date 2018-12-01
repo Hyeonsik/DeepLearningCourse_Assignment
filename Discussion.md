@@ -33,7 +33,7 @@ Of course, early stopping is not a really good option due to breaking orthogorna
 
 **18/12/01** <br>
 [Capturing keyboardinterrupt](https://stackoverflow.com/questions/4205317/capture-keyboardinterrupt-in-python-without-try-except)
-
+[Early stop using Keras](https://chrisalbon.com/deep_learning/keras/neural_network_early_stopping/)
 
 
 <br>
