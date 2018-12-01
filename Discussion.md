@@ -49,11 +49,11 @@ There were some points with very large cost peaking out.
   - Other reference : [37 Reasons why your neural netowork is not working](https://blog.slavv.com/37-reasons-why-your-neural-network-is-not-working-4020854bd607] <br>
   
   
-**5. Pyplot ** <br>
+**5. Pyplot** <br>
 [two_scales graph(twin)](https://matplotlib.org/examples/api/two_scales.html) <br>
 
 
-#### **6. Save & Restore in Tensorflow ** <br>
+#### **6. Save & Restore in Tensorflow** <br>
 
 
 - References<br>
