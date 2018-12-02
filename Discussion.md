@@ -61,7 +61,18 @@ Saving model can be useful if you want to share your result with others or if yo
     saver.save(sess, checkpoint_path, global_step)
 
 First you have to specify which variables you want to save. If you don't specify, it will save all the variables in default. Then, you can save the graph and its values of variables(exclude placeholder values) by using save. For a first element, you need session you are running(of course you need session to run the graph and set values for variables). Then you need specify which path you are going to store. Based on your current directory, you should tell in which folder you are going to save. For example, checkpoint_path = "CNN_model/model" means you will make a folder name CNN_model and you will save the model and its parameters inside it. From tensorflow version 1.11.0, save function makes 4 files: checkpoint, data-00000-of-00001, model.meta, model.index. Lastly, you can save parameters at the step you want.(You can use global_step from train.(Optimzer).minimize which it will automatically increase the step when being called)<br>
-'checkpoint' is used when you are restoring the model. When you save parameters at some steps, 
+'checkpoint' is used when you are restoring the model. When you save parameters every step, there will be multiple files of parameters. So checkpoint file show what is the latest checkpoint and the other checkpoints.
+
+
+    # Restore model
+    ## Restore graph
+    model_path = tf.train.latest_checkpoint(
+    loader = tf.train.import_meta_graph(model_path + '.meta')
+    ## Restore values
+    loader.restore(sess, model_path)
+
+It is not necessarily needed to use <u>import_meta_graph</u>. When you are continueing to train the same model. all you have to do is just restore parameters.
+
 
 <br>
 [Tip!] <br>
