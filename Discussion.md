@@ -54,6 +54,13 @@ There were some points with very large cost peaking out.
 
 
 #### **6. Save & Restore in Tensorflow** <br>
+Saving model can be useful if you want to share your result with others or if you can't train for long time. You can save the structure of the model and its parameters and continue training by restoring it. There are functions already prepared in tensorflow. <br>
+
+    # Saving variables & graph
+    saver = tf.train.Saver( --Variables in forms of lists or dictionaries-- )
+    saver.save(sess, checkpoint_path)
+
+First you have to specify which variables you want to save. If you don't specify, it will save all the variables in default. Then, you can save the graph and its values of variables(exclude placeholder values) by using save. For a first element, you need session you are running(of course you need session to 
 
 
 - References<br>
