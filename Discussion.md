@@ -63,6 +63,26 @@ Saving model can be useful if you want to share your result with others or if yo
 First you have to specify which variables you want to save. If you don't specify, it will save all the variables in default. Then, you can save the graph and its values of variables(exclude placeholder values) by using save. For a first element, you need session you are running(of course you need session to run the graph and set values for variables). Then you need specify which path you are going to store. Based on your current directory, you should tell in which folder you are going to save. For example, checkpoint_path = "CNN_model/model" means you will make a folder name CNN_model and you will save the model and its parameters inside it. From tensorflow version 1.11.0, save function makes 4 files: checkpoint, data-00000-of-00001, model.meta, model.index. Lastly, you can save parameters at the step you want.(You can use global_step from train.(Optimzer).minimize which it will automatically increase the step when being called)<br>
 'checkpoint' is used when you are restoring the model. When you save parameters at some steps, 
 
+<br>
+[Tip!] <br>
+It is important to set variables and operations name otherwise you have to find the name of tensors which is complicated.
+The way to get tensor by the name is like below.
+
+    # Get current graph
+    graph = tf.get_default_graph()
+    # Get the name of tensors in graph
+    list_name = [n.name for n in tf.get_default_graph().as_graph_def().node]
+    print(list_name)
+    # Get tensor by its name
+    x = graph.get_tensor_by_name("Placeholder:0")
+    prediction = graph.get_tensor_by_name("Softmax:0")
+
+p.s.
+If you want to change the name of the tensor, you should assign it to new tensor. 
+
+    #Example
+    z = x + y
+    z = tf.identity(z, name="z")
 
 
 - References<br>
