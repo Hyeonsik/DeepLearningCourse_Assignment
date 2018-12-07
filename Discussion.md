@@ -96,6 +96,22 @@ If you want to change the name of the tensor, you should assign it to new tensor
     z = tf.identity(z, name="z")
 
 
+#### **7. Trivial problems with Window** <br>
+There are lots of errors that don't show on Unbutu but only appear in Window. 
+Mostly there are problems when dealing with tar.gz files. For example on Assignment4, 
+
+    cmd = ['wzunzip', '-d', out_path]
+    print('Decompressing ', file_name)
+    subprocess.call(cmd)
+
+this doens't work in window, because wzunzip -d out_path is a command line for Ubuntu.
+So I have to manually install 7-zip and extract it by clicking. 
+
+1) PermissionError: [Errno 13] Permission denied: './data\\mnist\\train-images-idx3-ubyte' <br>
+For me, this error aroused because I was having the folder not file.(because I had manually extract gzip files)
+You can check it out for other cases in this [link](https://118k.tistory.com/424).
+
+
 - References<br>
 [Link1](https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/) <br>
 [TensorFlow 모델을 저장하고 불러오기](http://goodtogreate.tistory.com/entry/Saving-and-Restoring) <br>
