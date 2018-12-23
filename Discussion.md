@@ -112,6 +112,14 @@ For me, this error aroused because I was having the folder not file.(because I h
 You can check it out for other cases in this [link](https://118k.tistory.com/424).
 
 
+#### **8. Tensorflow-gpu** <br>
+To use tensorflow-gpu, you need to install cuda and cudnn first. But you need to check the version. It requires cuda version 9 and cuDNN version 7 as of 12/23/2018. Here is the link you can refere to. 
+[Setting up Deep Learning in Windows : Installing Keras with Tensorflow-GPU](https://appliedmachinelearning.blog/2018/02/01/setting-up-deep-learning-in-windows-installing-keras-with-tensorflow-gpu/) <br>
+[NVIDIA Installer cannot continue](https://www.drivereasy.com/knowledge/solved-nvidia-installer-cannot-continue/) <br>
+
+
+
+
 - References<br>
 [Link1](https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/) <br>
 [TensorFlow 모델을 저장하고 불러오기](http://goodtogreate.tistory.com/entry/Saving-and-Restoring) <br>
