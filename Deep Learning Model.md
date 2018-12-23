@@ -9,6 +9,9 @@
   - Inception V3 <br>
 + http://solarisailab.com/archives/1422 <br>
 
+<br>
++ [Achieving 90% accuracy in Object Recognition Task on CIFAR-10 Dataset with Keras: Convolutional Neural Networks](https://appliedmachinelearning.blog/2018/03/24/achieving-90-accuracy-in-object-recognition-task-on-cifar-10-dataset-with-keras-convolutional-neural-networks/) <br>
+
 <h2>2. RNN </h2>
 https://www.tensorflow.org/tutorials/sequences/recurrent <br><br>
 **- vanilla rnn** <br>
