@@ -119,6 +119,17 @@ To use tensorflow-gpu, you need to install cuda and cudnn first. But you need to
 
 
 
+### **9. MNIST** <br>
+I aimed to get accuracy of 99% on MNIST data set. But I only reached 97.8% using batch normalization & L2 loss & nesterov momentum.(18/12/24)
+
+#### <Reference from papers>
+- Understanding the Disharmony between Dropout and Batch Normalization by Variance Shift <br>
+    
+#### <Reference from sites>
+[35. 딥러닝으로 MNIST 98%이상 해보기 (lab 10) 소스 코드](http://pythonkim.tistory.com/47) <br>
+[텐서플로우 가이드: 배치 노멀라이제이션](http://openresearch.ai/t/topic/80) <br>
+[Batch Normalization](http://mjdeeplearning.tistory.com/22) <br>
+
 
 - References<br>
 [Link1](https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/) <br>
